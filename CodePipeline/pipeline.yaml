@@ -303,6 +303,7 @@ Resources:
                 - Name: bld
               Configuration:
                 ActionMode: REPLACE_ON_FAILURE
+                Capabilities : CAPABILITY_IAM
                 RoleArn: !GetAtt [CFNRole, Arn]
                 StackName: !Sub prod-${AWS::StackName}
                 TemplatePath: !Sub "bld::CloudFormation/gg.yml"
