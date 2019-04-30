@@ -1,1 +1,3 @@
 tin:g
+final version
+having data full end to end solution for edge deplyemnt
