@@ -305,7 +305,7 @@ Resources:
                 ActionMode: REPLACE_ON_FAILURE
                 Capabilities : CAPABILITY_IAM
                 RoleArn: !GetAtt [CFNRole, Arn]
-                StackName: !Sub prod-${AWS::StackName}
+                StackName: !Sub edge-${AWS::StackName}
                 TemplatePath: !Sub "bld::CloudFormation/gg.yml"
                 TemplateConfiguration: "bld::CloudFormation/configuration_prod.json"
               RunOrder: '4' 
