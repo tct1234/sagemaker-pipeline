@@ -302,7 +302,7 @@ Resources:
               InputArtifacts:
                 - Name: bld
               Configuration:
-                ActionMode: REPLACE_ON_FAILURE
+                ActionMode: CREATE_UPDATE
                 Capabilities : CAPABILITY_IAM
                 RoleArn: !GetAtt [CFNRole, Arn]
                 StackName: !Sub edge-${AWS::StackName}
